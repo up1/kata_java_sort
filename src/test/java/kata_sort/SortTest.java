@@ -22,8 +22,13 @@ public class SortTest {
 	}
 	
 	@Test
-	public void Listof2ValueThatOrdersShouldReturnSameList() throws Exception {
+	public void listOf2ValueThatOrdersShouldReturnSameList() throws Exception {
 		assertEquals(list(1,2), sort.sort(list(1,2)));
+	}
+	
+	@Test
+	public void listOf2ValueThatNotOrderShouldReturnOrderList() throws Exception {
+		assertEquals(list(1,2), sort.sort(list(2,1)));
 	}
 	
 	private List<Integer> list(int... integers) {
