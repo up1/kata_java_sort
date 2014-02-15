@@ -6,7 +6,7 @@ import java.util.List;
 public class MySort {
 
 	public List<Integer> sort(List<Integer> list) {
-		if (list.size() == 2) {
+		if (list.size() > 1) {
 			int firstNumber = list.get(0);
 			int secondNumber = list.get(1);
 			if (firstNumber > secondNumber) {
