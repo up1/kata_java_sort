@@ -5,14 +5,9 @@ import java.util.List;
 public class MySort {
 
 	public List<Integer> sort(List<Integer> list) {
-		if (list.size() == 2) {
+		if (list.size() >= 2) {
 			swapAll(list, 0);
-		} else if (list.size() == 3) {
-			swapAll(list, 0);
-			sort(list.subList(0, 2));
-		} else if(list.size() == 4) {
-			swapAll(list, 0);
-			sort(list.subList(0, 3));
+			sort(list.subList(0, list.size()-1));
 		}
 		return list;
 	}
