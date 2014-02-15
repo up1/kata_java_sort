@@ -11,7 +11,6 @@ public class MySort {
 			swap(list, 0, 1);
 			swap(list, 1, 2);
 			swap(list, 0, 1);
-			swap(list, 1, 2);
 		}
 		return list;
 	}
