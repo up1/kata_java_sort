@@ -21,6 +21,11 @@ public class SortTest {
 		assertEquals(list(1), sort.sort(list(1)));
 	}
 	
+	@Test
+	public void Listof2ValueThatOrdersShouldReturnSameList() throws Exception {
+		assertEquals(list(1,2), sort.sort(list(1,2)));
+	}
+	
 	private List<Integer> list(int... integers) {
 		List<Integer> list = new ArrayList<Integer>();
 		for (int integer : integers) {
