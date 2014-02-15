@@ -4,13 +4,13 @@ import java.util.List;
 
 public class MySort {
 
-	public Object sort(List<Integer> list) {
+	public List<Integer> sort(List<Integer> list) {
 		if (list.size() == 2) {
 			swap(list, 0, 1);
 		} else if (list.size() == 3) {
 			swap(list, 0, 1);
 			swap(list, 1, 2);
-			swap(list, 0, 1);
+			sort(list.subList(0, 1));
 		}
 		return list;
 	}
