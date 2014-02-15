@@ -16,6 +16,12 @@ public class MySort {
 			if (isSwap(list,1,2)) {
 				swap(list, 1, 2);
 			}
+			if (isSwap(list,0,1)) {
+				swap(list, 0, 1);
+			}
+			if (isSwap(list,1,2)) {
+				swap(list, 1, 2);
+			}
 		}
 		return list;
 	}
