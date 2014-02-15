@@ -9,15 +9,15 @@ import org.junit.Test;
 
 public class SortTest {
 
+	MySort sort = new MySort();
+	
 	@Test
 	public void emptyInput() {
-		MySort sort = new MySort();
 		assertEquals(list(), sort.sort(list()));
 	}
 	
 	@Test
 	public void listOfOneShouldReturnListOfOne() throws Exception {
-		MySort sort = new MySort();
 		assertEquals(list(1), sort.sort(list(1)));
 	}
 	
