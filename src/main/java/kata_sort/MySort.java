@@ -7,13 +7,23 @@ public class MySort {
 
 	public List<Integer> sort(List<Integer> list) {
 		if (list.size() > 1) {
-			int firstNumber = list.get(0);
-			int secondNumber = list.get(1);
-			if (firstNumber > secondNumber) {
-				return list(secondNumber, firstNumber);
-			} else {
-				return list(firstNumber, secondNumber);
+			final int firstNumber = list.get(0);
+			final List<Integer> lessList = list();
+			final List<Integer> greaterList = list();
+			for (Integer integer : list) {
+				if (integer < firstNumber) {
+					lessList.add(integer);
+				} else if (integer > firstNumber) {
+					greaterList.add(integer);
+				}
 			}
+			return new ArrayList<Integer>() {
+				{
+					addAll(lessList);
+					add(firstNumber);
+					addAll(greaterList);
+				}
+			};
 		}
 		return list;
 	}
