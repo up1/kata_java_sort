@@ -12,12 +12,16 @@ public class MySort {
 			swap(list, 1, 2);
 			sort(list.subList(0, 2));
 		} else if(list.size() == 4) {
-			swap(list, 0, 1);
-			swap(list, 1, 2);
-			swap(list, 2, 3);
+			swapAll(list, 0);
 			sort(list.subList(0, 3));
 		}
 		return list;
+	}
+	
+	private void swapAll(List<Integer> list, int startPosition) {
+		if(startPosition +1 > list.size()-1) return;
+		swap(list, startPosition, startPosition+1);
+		swapAll(list, startPosition+1);
 	}
 
 	private boolean isSwap(List<Integer> list, int startPosition, int finishPosition) {
