@@ -3,6 +3,7 @@ kata_java_sort
 
 Kata sort with java with data in below list ::
 
+```
 [] => []
 [1] => [1]
 [1,2] => [1,2]
@@ -14,3 +15,4 @@ Kata sort with java with data in below list ::
 [3,2,1] => [1,2,3]
 [1,2,3,4] => [1,2,3,4]
 [4,3,2,1] => [1,2,3,4]
+```
