@@ -19,9 +19,9 @@ public class MySort {
 			}
 			return new ArrayList<Integer>() {
 				{
-					addAll(lessList);
+					addAll(sort(lessList));
 					add(firstNumber);
-					addAll(greaterList);
+					addAll(sort(greaterList));
 				}
 			};
 		}
