@@ -51,6 +51,16 @@ public class SortTest {
 		assertEquals(list(1,2,3), sort.sort(list(3,1,2)));
 	}
 	
+	@Test
+	public void listOf4ValueThatOrdersShouldReturnSameList() throws Exception {
+		assertEquals(list(1,2,3,4), sort.sort(list(1,2,3,4)));
+	}
+	
+	@Test
+	public void listOf4ValueThatNotOrderShouldReturnOrderList() throws Exception {
+		assertEquals(list(1,2,3,4), sort.sort(list(4,3,2,1)));
+	}
+	
 	private List<Integer> list(int... integers) {
 		List<Integer> list = new ArrayList<Integer>();
 		for (int integer : integers) {

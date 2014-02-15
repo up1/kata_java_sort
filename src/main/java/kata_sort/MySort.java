@@ -10,7 +10,12 @@ public class MySort {
 		} else if (list.size() == 3) {
 			swap(list, 0, 1);
 			swap(list, 1, 2);
-			sort(list.subList(0, 1));
+			sort(list.subList(0, 2));
+		} else if(list.size() == 4) {
+			swap(list, 0, 1);
+			swap(list, 1, 2);
+			swap(list, 2, 3);
+			sort(list.subList(0, 3));
 		}
 		return list;
 	}
