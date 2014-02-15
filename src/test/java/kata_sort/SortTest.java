@@ -15,6 +15,12 @@ public class SortTest {
 		assertEquals(list(), sort.sort(list()));
 	}
 	
+	@Test
+	public void listOfOneShouldReturnListOfOne() throws Exception {
+		MySort sort = new MySort();
+		assertEquals(list(1), sort.sort(list(1)));
+	}
+	
 	private List<Integer> list(int... integers) {
 		List<Integer> list = new ArrayList<Integer>();
 		for (int integer : integers) {
