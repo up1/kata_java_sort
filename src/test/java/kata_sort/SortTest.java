@@ -46,6 +46,11 @@ public class SortTest {
 		assertEquals(list(1,2,3), sort.sort(list(1,3,2)));
 	}
 	
+//	@Test
+//	public void listOf3ValueThatNotOrderShouldReturnOrderList3() throws Exception {
+//		assertEquals(list(1,2,3), sort.sort(list(3,2,1)));
+//	}
+	
 	private List<Integer> list(int... integers) {
 		List<Integer> list = new ArrayList<Integer>();
 		for (int integer : integers) {
